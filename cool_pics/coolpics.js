@@ -1,8 +1,8 @@
-handleResize();
 
 const menu_button = document.getElementById("menu_button");
 const menu = document.getElementById("menu");
 
+handleResize();
 
 function showMenu() {
     menu.classList.toggle("hidden");
