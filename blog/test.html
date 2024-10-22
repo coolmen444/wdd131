@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>/* Container should be a flex container */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto multiple rows */
+    height: 100%;
+}
+
+html, body {
+    height:100%;
+    margin: 0;
+    padding: 0;
+}
+/* First item takes up 100% of the width */
+.item1 {
+    flex-basis: 100%; /* First item will span the whole row */
+    background-color: lightblue; /* Background color for Item 1 */
+    padding: 10px;
+}
+
+/* Remaining items will take equal space */
+.item2, .item3, .item4{
+    flex-grow: 1; /* Make items take equal space on the second row */
+   
+}
+
+/* Background colors for the second-row items */
+.item2 {
+    background-color: lightcoral; /* Background color for Item 2 */
+}
+
+.item3 {
+    background-color: lightgreen; /* Background color for Item 3 */
+}
+
+.item4 {
+    background-color: lightgoldenrodyellow; /* Background color for Item 4 */
+}
+
+/* Optional styling for visual clarity */
+.item {
+    border: 1px solid black;
+    text-align: center;
+    color: black; /* Ensure text is visible on all backgrounds */
+}
+
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">Item 1</div>
+        <div class="item item2">Item 2</div>
+        <div class="item item3">Item 3</div>
+        <div class="item item4">Item 4</div>
+    </div>    
+</body>
+</html>
