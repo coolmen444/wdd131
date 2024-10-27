@@ -1,0 +1,71 @@
+/* 
+#EFC69B
+#AF1B3F
+#473144
+*/
+
+body {
+    font-family: "Roboto Condensed";
+    color: #473144;
+}
+
+h1, h2 {
+    font-family: "Playfair Display";
+    color: #AF1B3F;
+}
+
+nav {
+  border-top: #EFC69B solid;
+  border-bottom:#EFC69B solid ; 
+}
+
+nav ul {
+    display:grid;
+    grid-auto-flow: column;
+    justify-content: end;
+    list-style-type: none;
+    color:#AF1B3F;
+    padding-right: 20px;
+    margin:0;
+}
+
+nav ul li {
+   padding: 20px;
+   
+}
+nav ul li a {
+    color: #AF1B3F;
+    text-decoration: none;
+}
+
+#main-title {
+    text-align: center;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: 30px;
+}
+
+#book-info {
+    text-align: right;
+    margin:20px;
+    padding:15px;
+    border-right: #EFC69B solid;
+    
+}
+
+
+
+
+article {
+    text-align: center;
+}
+
+.skiptocontent {
+    position: absolute;
+    top: -40px;
+}
+.skiptocontent a:focus {
+    top: 0;
+}
