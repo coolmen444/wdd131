@@ -1,0 +1,87 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: -0.5px;
+}
+
+#card-front, #card-back {
+    height: 250px;
+    width: 390px;
+    background-color: #DCDDDF;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+    grid-area: overlap;
+}
+
+#card-back {
+    transform: translate(100px, 50px);
+    z-index: 1;
+    position: relative;
+}
+
+#card-front {
+  z-index: 2;
+  text-align: left;
+  display: grid;
+  grid-template-columns:75% 25%;
+  box-sizing: border-box;
+  padding:30px;
+  column-gap: 10px;
+  
+  
+}
+
+#expiration-inputs-container {
+  grid-column-start: 2;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+
+  
+}
+img {
+  justify-self: right;
+}
+#month, #year {
+width: 30px;
+}
+#card-number, #card-holder, #card-holder-label, #card-number-label {
+  grid-column-start: 1;
+}
+
+#cards-container {
+  display: grid;
+  grid-template-areas: "overlap";
+  position: relative;
+  
+  
+}
+#card-mag-strip {
+  background-color: #444444;
+  width: 100%;
+  height:50px;
+  margin-top: 17px;
+}
+#cvc-container {
+  position: absolute;
+  bottom: 10px;
+  right:10px;
+  display: grid;
+  justify-items:left;
+}
+#cvc-input {
+  width:50px;
+  height:26px;
+}
+form {
+    display: inline-block;
+    width: auto;
+    text-align: right;
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 50px);
+    transform: translate(-50%, -50%);
+}
+
+
