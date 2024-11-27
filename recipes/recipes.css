@@ -65,7 +65,6 @@ main {
     display: flex;
     flex-direction: column;
     row-gap: 40px;
-    
 }
 
 .tag-container {
@@ -84,7 +83,6 @@ footer {
     flex-direction: column-reverse;
     align-items: center;
     margin-top: 40px;
-
 }
 
 footer img {

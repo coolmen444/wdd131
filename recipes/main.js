@@ -58,10 +58,9 @@ function ratingTemplate(rating) {
 	return html
 }
 
-
 function renderRecipes(recipeList) {
     let main = document.querySelector("main");
-    main.innerHTML = ''; // This will clear any existing content (random recipe or search results)
+    main.innerHTML = ''; 
     
     recipeList.forEach(recipe => {
         let recipeHtml = recipeTemplate(recipe);
@@ -79,7 +78,6 @@ function filterRecipes(query) {
     const filteredRecipes = recipes.filter(recipe => recipe.name.toLowerCase().includes(query));
     filteredRecipes.sort((a, b) => a.name.localeCompare(b.name));
     return filteredRecipes;
-
 }
 
 function search() {
