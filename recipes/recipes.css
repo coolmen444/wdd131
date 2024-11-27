@@ -54,10 +54,18 @@ img {
     box-sizing: border-box;
 }
 
+#search-button:hover {
+    cursor: pointer;
+}
+
 main {
     border: 1px solid black;
     padding: 25px;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    
 }
 
 .tag-container {
@@ -91,7 +99,7 @@ footer img {
 
 @media (min-width: 600px) {
 
-    main {
+    .single-recipe {
         display: flex;
         flex-direction: row;
         gap: 10px;
